@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<!-- ✅ SEO META TAGS -->
+<title>Murali Medicals – Trusted Pharmacy in Madanapalle | Medicine Delivery</title>
+<meta name="description" content="Murali Medicals – Trusted pharmacy in Madanapalle, Andhra Pradesh. Order medicines, upload prescriptions, home delivery available. Call 085712 23028. Open till 11 PM."/>
+<meta name="keywords" content="pharmacy madanapalle, medical shop madanapalle, murali medicals, medicine delivery madanapalle, medical store andhra pradesh"/>
+<meta name="author" content="Murali Medicals"/>
+<meta property="og:title" content="Murali Medicals – Trusted Pharmacy in Madanapalle"/>
+<meta property="og:description" content="Quality medicines, expert advice, and fast home delivery. Open till 11 PM. Call 085712 23028."/>
+<meta property="og:type" content="business.local"/>
+<link rel="canonical" href="https://muralimedicals.in"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+/* ══════════════════════════════════════
+   DESIGN TOKENS – Light & Dark
+══════════════════════════════════════ */
+:root{
+  --g1:#0d5c2e;--g2:#1a7a4a;--g3:#25a963;
+  --cream:#f8fdf9;--white:#fff;
+  --dark:#0a1f12;--grey:#5a6e62;--lgrey:#e4efe8;
+  --accent:#f4a020;--red:#dc2626;
+  --card:#fff;--bg:var(--cream);
+  --text:var(--dark);--text2:var(--grey);--border:var(--lgrey);
+  --shadow:0 4px 32px rgba(13,92,46,.10);
+  --nav-bg:rgba(10,31,18,.92);
+}
+[data-theme="dark"]{
+  --card:#142b1e;--bg:#0a1f12;--cream:#0a1f12;
+  --text:#e8f5ee;--text2:#7faa8e;--border:#1e3d2a;
+  --lgrey:#1e3d2a;--white:#142b1e;--cream:#0a1f12;
+  --shadow:0 4px 32px rgba(0,0,0,.4);
+  --nav-bg:rgba(5,14,9,.96);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;transition:background .3s,color .3s;-webkit-text-size-adjust:100%;}
+a,button,.btn,.cat-card,.tip-card{-webkit-tap-highlight-color:transparent;}
+input,textarea{font-size:16px!important;}
+
+/* ── NAVBAR ── */
+.navbar{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;justify-content:space-between;align-items:center;padding:0 5%;height:68px;background:var(--nav-bg);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.07);transition:background .3s;}
+.navbar.scrolled{background:rgba(5,14,9,.98);}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;}
+.nav-logo-text .brand{font-family:'Playfair Display',serif;font-size:1.18rem;font-weight:900;color:#fff;display:block;line-height:1.1;}
+.nav-logo-text .sub{font-size:.61rem;color:rgba(255,255,255,.42);letter-spacing:2px;text-transform:uppercase;}
+.nav-links{display:flex;gap:24px;list-style:none;}
+.nav-links a{color:rgba(255,255,255,.68);font-size:.86rem;text-decoration:none;font-weight:500;transition:color .2s;}
+.nav-links a:hover{color:#fff;}
+.nav-right{display:flex;align-items:center;gap:12px;}
+.dark-toggle{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);color:#fff;width:38px;height:38px;border-radius:50%;cursor:pointer;font-size:1.1rem;display:flex;align-items:center;justify-content:center;transition:background .2s;}
+.dark-toggle:hover{background:rgba(255,255,255,.2);}
+.nav-cta{background:var(--g3);color:#fff;padding:9px 18px;border-radius:30px;font-size:.83rem;font-weight:600;text-decoration:none;transition:background .2s,transform .2s;}
+.nav-cta:hover{background:var(--g2);transform:translateY(-1px);}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;}
+.hamburger span{width:24px;height:2px;background:#fff;border-radius:2px;}
+.mobile-menu{display:none;flex-direction:column;background:#0a1f12;padding:16px 5% 20px;gap:2px;border-top:1px solid rgba(255,255,255,.07);}
+.mobile-menu a{color:rgba(255,255,255,.76);text-decoration:none;padding:10px 0;font-size:.93rem;border-bottom:1px solid rgba(255,255,255,.06);}
+.mobile-menu.open{display:flex;}
+
+/* ── HERO ── */
+.hero{min-height:100vh;display:flex;flex-direction:column;background:linear-gradient(160deg,#0a1f12 0%,#0d5c2e 45%,#1a7a4a 100%);position:relative;overflow:hidden;padding-top:68px;}
+.hero-pat{position:absolute;inset:0;opacity:.03;background-image:radial-gradient(circle,#fff 1px,transparent 1px);background-size:36px 36px;}
+.orb1{position:absolute;top:-100px;right:-80px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(37,169,99,.18) 0%,transparent 70%);}
+.orb2{position:absolute;bottom:-140px;left:-60px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(244,160,32,.09) 0%,transparent 70%);}
+.hero-wave{position:absolute;bottom:-1px;left:0;right:0;height:90px;background:var(--bg);clip-path:ellipse(60% 100% at 50% 100%);transition:background .3s;}
+.hero-inner{flex:1;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:56px 6% 96px;position:relative;z-index:2;}
+.pill{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);color:rgba(255,255,255,.9);font-size:.8rem;letter-spacing:1.5px;text-transform:uppercase;padding:8px 20px;border-radius:30px;margin-bottom:28px;animation:fu .6s .1s both;}
+.live{width:7px;height:7px;border-radius:50%;background:#4ade80;animation:blink 1.5s infinite;}
+@keyframes blink{0%,100%{opacity:1;}50%{opacity:.3;}}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.4rem,6.2vw,4.8rem);color:#fff;line-height:1.1;margin-bottom:20px;animation:fu .6s .25s both;}
+.hero h1 .ac{color:var(--accent);}
+.hero h1 .it{font-style:italic;color:rgba(255,255,255,.8);}
+.hero-desc{color:rgba(255,255,255,.62);font-size:1.03rem;max-width:520px;line-height:1.74;margin-bottom:40px;font-weight:300;animation:fu .6s .4s both;}
+.hero-btns{display:flex;gap:11px;flex-wrap:wrap;justify-content:center;animation:fu .6s .55s both;}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:50px;font-size:.9rem;font-weight:600;cursor:pointer;border:none;text-decoration:none;transition:all .25s;font-family:'DM Sans',sans-serif;}
+.btn-white{background:#fff;color:var(--g1);}
+.btn-white:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.25);}
+.btn-wa{background:#25d366;color:#fff;}
+.btn-wa:hover{background:#1ebe5d;transform:translateY(-2px);box-shadow:0 8px 24px rgba(37,211,102,.4);}
+.btn-ghost{background:rgba(255,255,255,.1);color:#fff;border:1.5px solid rgba(255,255,255,.28);}
+.btn-ghost:hover{background:rgba(255,255,255,.18);transform:translateY(-2px);}
+.btn-green{background:var(--g2);color:#fff;}
+.btn-green:hover{background:var(--g1);transform:translateY(-2px);}
+.btn-outline-green{background:transparent;border:1.5px solid var(--g2);color:var(--g2);}
+.btn-outline-green:hover{background:var(--g2);color:#fff;transform:translateY(-2px);}
+.hero-stats{display:flex;gap:40px;margin-top:54px;flex-wrap:wrap;justify-content:center;animation:fu .6s .7s both;}
+.stat{text-align:center;color:#fff;}
+.stn{font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;line-height:1;}
+.stn b{color:var(--accent);}
+.stl{font-size:.7rem;letter-spacing:1.5px;text-transform:uppercase;opacity:.5;margin-top:4px;}
+.sdiv{width:1px;height:48px;background:rgba(255,255,255,.13);align-self:center;}
+@keyframes fu{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+
+/* ── INFO STRIP ── */
+.info-strip{display:grid;grid-template-columns:repeat(4,1fr);background:var(--card);box-shadow:0 2px 20px rgba(13,92,46,.08);}
+.icard{display:flex;align-items:center;gap:13px;padding:20px 24px;border-right:1px solid var(--border);}
+.icard:last-child{border-right:none;}
+.icard-ico{width:42px;height:42px;border-radius:11px;background:var(--bg);display:flex;align-items:center;justify-content:center;font-size:1.15rem;flex-shrink:0;}
+.icard p{font-size:.7rem;color:var(--text2);text-transform:uppercase;letter-spacing:1px;margin-bottom:2px;}
+.icard strong{font-size:.87rem;color:var(--text);font-weight:600;}
+.open-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#22c55e;margin-right:4px;}
+
+/* ── SECTION BASE ── */
+section{padding:84px 6%;}
+.s-label{font-size:.71rem;letter-spacing:3px;text-transform:uppercase;color:var(--g2);font-weight:700;margin-bottom:8px;}
+.s-title{font-family:'Playfair Display',serif;font-size:clamp(1.65rem,3vw,2.5rem);line-height:1.18;margin-bottom:11px;color:var(--text);}
+.s-sub{color:var(--text2);max-width:480px;line-height:1.72;font-weight:300;font-size:.93rem;}
+
+/* ══════════════════════════════════════
+   MEDICINE AVAILABILITY SEARCH
+══════════════════════════════════════ */
+.med-search-sec{background:var(--card);padding:50px 6%;}
+.search-bar{display:flex;align-items:center;max-width:560px;margin:28px 0 0;position:relative;}
+.search-bar input{flex:1;padding:15px 20px 15px 48px;border:2px solid var(--border);border-right:none;border-radius:14px 0 0 14px;font-size:.95rem;font-family:'DM Sans',sans-serif;outline:none;background:var(--bg);color:var(--text);transition:border-color .2s;}
+.search-bar input:focus{border-color:var(--g3);}
+.search-icon{position:absolute;left:16px;font-size:1.1rem;pointer-events:none;}
+.search-bar button{padding:15px 22px;background:var(--g2);color:#fff;border:none;border-radius:0 14px 14px 0;cursor:pointer;font-size:1rem;font-weight:600;transition:background .2s;white-space:nowrap;}
+.search-bar button:hover{background:var(--g1);}
+.med-results{margin-top:24px;display:none;}
+.med-results-title{font-size:.78rem;color:var(--text2);margin-bottom:12px;letter-spacing:.5px;}
+.med-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;}
+.med-item{background:var(--bg);border:1px solid var(--border);border-radius:12px;padding:13px 16px;display:flex;justify-content:space-between;align-items:center;}
+.med-name{font-size:.88rem;font-weight:600;color:var(--text);}
+.med-type{font-size:.72rem;color:var(--text2);margin-top:2px;}
+.badge{font-size:.72rem;font-weight:700;padding:4px 10px;border-radius:20px;}
+.badge-in{background:#dcfce7;color:#16a34a;}
+.badge-out{background:#fee2e2;color:#dc2626;}
+[data-theme="dark"] .badge-in{background:rgba(22,163,74,.2);color:#4ade80;}
+[data-theme="dark"] .badge-out{background:rgba(220,38,38,.2);color:#f87171;}
+.no-result{color:var(--text2);font-size:.9rem;padding:16px 0;}
+
+/* ── MEDICINE CATEGORIES ── */
+.cats{background:var(--bg);}
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(148px,1fr));gap:13px;margin-top:36px;}
+.cat-card{background:var(--card);border-radius:18px;padding:22px 14px;text-align:center;cursor:pointer;border:1.5px solid transparent;transition:all .25s;box-shadow:0 2px 12px rgba(13,92,46,.05);}
+.cat-card:hover{border-color:var(--g3);transform:translateY(-5px);box-shadow:0 14px 32px rgba(13,92,46,.12);}
+.cat-em{font-size:2rem;margin-bottom:9px;display:block;}
+.cat-card h3{font-size:.84rem;font-weight:600;color:var(--text);}
+.cat-card p{font-size:.71rem;color:var(--text2);margin-top:3px;}
+
+/* ── BRANDS ── */
+.brands{background:var(--card);padding:52px 6%;}
+.brands-grid{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px;}
+.brand-pill{background:var(--bg);border:1.5px solid var(--border);border-radius:50px;padding:11px 24px;font-size:.88rem;font-weight:600;color:var(--text);display:flex;align-items:center;gap:8px;transition:all .2s;cursor:default;}
+.brand-pill:hover{border-color:var(--g3);color:var(--g2);transform:translateY(-2px);}
+.brand-pill span{font-size:1.1rem;}
+
+/* ── EMERGENCY MEDS ── */
+.emerg-meds{background:linear-gradient(135deg,#0d5c2e,#0a1f12);padding:52px 6%;}
+.emerg-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:13px;margin-top:32px;}
+.emerg-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:18px;display:flex;align-items:center;gap:12px;}
+.emerg-icon{font-size:1.6rem;flex-shrink:0;}
+.emerg-card strong{color:#fff;font-size:.9rem;}
+.emerg-card p{color:rgba(255,255,255,.45);font-size:.77rem;margin-top:2px;}
+
+/* ── PRESCRIPTION ── */
+.rx-sec{background:var(--dark);position:relative;overflow:hidden;}
+.rx-b1{position:absolute;top:-80px;right:-60px;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(37,169,99,.1),transparent 70%);}
+.rx-b2{position:absolute;bottom:-100px;left:10%;width:250px;height:250px;border-radius:50%;background:radial-gradient(circle,rgba(244,160,32,.07),transparent 70%);}
+.rx-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;position:relative;z-index:2;}
+.rx-grid .s-title{color:#fff;}
+.rx-grid .s-sub{color:rgba(255,255,255,.46);}
+.steps{margin-top:28px;display:flex;flex-direction:column;gap:18px;}
+.step{display:flex;gap:15px;align-items:flex-start;}
+.step-n{width:35px;height:35px;border-radius:50%;flex-shrink:0;background:linear-gradient(135deg,var(--g3),var(--g2));color:#fff;font-weight:700;font-size:.83rem;display:flex;align-items:center;justify-content:center;}
+.step h4{color:#fff;font-size:.91rem;margin-bottom:3px;}
+.step p{color:rgba(255,255,255,.42);font-size:.8rem;line-height:1.5;}
+.sline{width:1px;height:18px;background:rgba(255,255,255,.1);margin-left:16px;}
+.flow-arrow{display:flex;align-items:center;gap:10px;margin-top:28px;padding:16px 20px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;}
+.flow-step{text-align:center;flex:1;}
+.flow-step .fi{font-size:1.4rem;display:block;margin-bottom:4px;}
+.flow-step p{color:rgba(255,255,255,.5);font-size:.72rem;}
+.flow-arr{color:var(--g3);font-size:1.2rem;flex-shrink:0;}
+.rx-card{background:rgba(255,255,255,.04);border:1.5px solid rgba(255,255,255,.08);border-radius:22px;padding:30px;}
+.rx-title{color:#fff;font-family:'Playfair Display',serif;font-size:1.28rem;margin-bottom:18px;display:flex;align-items:center;gap:9px;}
+.drop-zone{border:2px dashed rgba(255,255,255,.16);border-radius:13px;padding:30px 16px;text-align:center;cursor:pointer;transition:border-color .2s,background .2s;margin-bottom:12px;}
+.drop-zone:hover,.drop-zone.drag{border-color:var(--g3);background:rgba(37,169,99,.06);}
+.drop-ico{font-size:2.2rem;margin-bottom:9px;display:block;}
+.d1{color:rgba(255,255,255,.5);font-size:.84rem;}
+.d1 b{color:var(--g3);cursor:pointer;}
+.d2{color:rgba(255,255,255,.26);font-size:.73rem;margin-top:3px;}
+#fname{font-size:.78rem;color:var(--g3);margin-bottom:11px;min-height:15px;}
+.rx-inp{width:100%;padding:11px 14px;border-radius:10px;background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.09);color:#fff;font-size:.86rem;font-family:'DM Sans',sans-serif;outline:none;margin-bottom:10px;}
+.rx-inp:focus{border-color:var(--g3);}
+.rx-inp::placeholder{color:rgba(255,255,255,.27);}
+.rx-btn{width:100%;padding:13px;border-radius:11px;background:linear-gradient(135deg,var(--g3),var(--g2));color:#fff;font-weight:600;font-size:.92rem;cursor:pointer;border:none;font-family:'DM Sans',sans-serif;transition:opacity .2s,transform .2s;}
+.rx-btn:hover{opacity:.9;transform:translateY(-1px);}
+.rx-ok{display:none;margin-top:12px;padding:11px 14px;background:rgba(34,197,94,.12);border:1px solid rgba(34,197,94,.2);border-radius:10px;color:#4ade80;font-size:.82rem;text-align:center;}
+
+/* ── ORDER FORM ── */
+.order-sec{background:var(--bg);}
+.order-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;}
+.order-card{background:var(--card);border-radius:22px;padding:32px;border:1.5px solid var(--border);box-shadow:var(--shadow);}
+.order-card h3{font-family:'Playfair Display',serif;font-size:1.4rem;color:var(--text);margin-bottom:6px;}
+.order-card .oc-sub{font-size:.84rem;color:var(--text2);margin-bottom:22px;}
+.form-inp{width:100%;padding:12px 15px;border-radius:10px;background:var(--bg);border:1.5px solid var(--border);color:var(--text);font-size:.87rem;font-family:'DM Sans',sans-serif;outline:none;margin-bottom:12px;transition:border-color .2s;}
+.form-inp:focus{border-color:var(--g3);}
+.form-inp::placeholder{color:var(--text2);}
+textarea.form-inp{resize:vertical;min-height:80px;}
+.form-btn{width:100%;padding:13px;border-radius:11px;background:var(--g2);color:#fff;font-weight:600;font-size:.92rem;cursor:pointer;border:none;font-family:'DM Sans',sans-serif;transition:background .2s,transform .2s;}
+.form-btn:hover{background:var(--g1);transform:translateY(-1px);}
+.form-ok{display:none;margin-top:12px;padding:11px 14px;background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.25);border-radius:10px;color:var(--g2);font-size:.83rem;text-align:center;}
+.order-info{padding-top:10px;}
+.order-info h3{font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--text);margin-bottom:12px;}
+.order-info p{color:var(--text2);font-size:.9rem;line-height:1.7;margin-bottom:24px;}
+.order-ways{display:flex;flex-direction:column;gap:12px;margin-bottom:28px;}
+.oway{display:flex;gap:14px;align-items:center;background:var(--card);border:1px solid var(--border);border-radius:13px;padding:14px 18px;}
+.oway-ico{width:40px;height:40px;border-radius:10px;background:var(--bg);display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;}
+.oway strong{font-size:.88rem;color:var(--text);}
+.oway p{font-size:.76rem;color:var(--text2);margin-top:2px;}
+
+/* ── DELIVERY ── */
+.delivery{background:var(--card);}
+.del-grid{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center;}
+.del-feats{margin-top:28px;display:flex;flex-direction:column;gap:12px;}
+.del-feat{display:flex;gap:14px;align-items:center;background:var(--bg);border-radius:13px;padding:14px 18px;border:1px solid var(--border);transition:transform .2s,box-shadow .2s;}
+.del-feat:hover{transform:translateX(4px);box-shadow:0 4px 18px rgba(13,92,46,.1);}
+.del-ico{width:40px;height:40px;border-radius:10px;flex-shrink:0;background:var(--card);display:flex;align-items:center;justify-content:center;font-size:1.1rem;}
+.del-feat strong{font-size:.88rem;color:var(--text);}
+.del-feat p{font-size:.76rem;color:var(--text2);margin-top:2px;}
+.del-cta{margin-top:24px;display:flex;gap:11px;flex-wrap:wrap;}
+.del-visual{background:linear-gradient(145deg,var(--g1),var(--dark));border-radius:26px;padding:44px 32px;text-align:center;position:relative;overflow:hidden;}
+.del-visual::before{content:'';position:absolute;top:-40px;right:-40px;width:160px;height:160px;border-radius:50%;background:rgba(255,255,255,.04);}
+.del-em{font-size:4.5rem;display:block;margin-bottom:16px;animation:float 3s ease-in-out infinite;}
+@keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-10px);}}
+.del-visual h3{color:#fff;font-family:'Playfair Display',serif;font-size:1.4rem;margin-bottom:9px;}
+.del-visual p{color:rgba(255,255,255,.5);font-size:.83rem;line-height:1.6;max-width:210px;margin:0 auto;}
+.hours-pill{display:inline-block;margin-top:18px;background:var(--accent);color:var(--dark);font-weight:700;font-size:.8rem;padding:7px 18px;border-radius:30px;}
+
+/* ── GALLERY ── */
+.gallery{background:var(--bg);}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px;}
+.gal-item{border-radius:18px;overflow:hidden;position:relative;cursor:pointer;aspect-ratio:4/3;}
+.gal-img{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3.5rem;transition:transform .35s;}
+.gal-item:hover .gal-img{transform:scale(1.06);}
+.gal-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,31,18,.85) 0%,transparent 60%);opacity:0;transition:opacity .3s;display:flex;align-items:flex-end;padding:18px;}
+.gal-item:hover .gal-overlay{opacity:1;}
+.gal-label{color:#fff;font-size:.88rem;font-weight:600;}
+.gal-1{background:linear-gradient(135deg,#1a7a4a22,#25a96333);}
+.gal-2{background:linear-gradient(135deg,#0d5c2e22,#1a7a4a33);}
+.gal-3{background:linear-gradient(135deg,#f4a02022,#f4a02033);}
+.gal-4{background:linear-gradient(135deg,#25a96322,#0d5c2e33);}
+.gal-5{background:linear-gradient(135deg,#1a7a4a33,#f4a02022);}
+.gal-6{background:linear-gradient(135deg,#0a1f1222,#25a96322);}
+
+/* ── REVIEWS ── */
+.reviews{background:var(--card);}
+.rev-head{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:16px;margin-bottom:38px;}
+.overall{display:flex;align-items:center;gap:15px;background:var(--bg);border-radius:16px;padding:15px 20px;border:1px solid var(--border);}
+.big-sc{font-family:'Playfair Display',serif;font-size:2.5rem;font-weight:900;color:var(--text);line-height:1;}
+.sc-stars{color:var(--accent);font-size:.95rem;letter-spacing:2px;}
+.sc-count{font-size:.74rem;color:var(--text2);margin-top:3px;}
+.rev-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:15px;}
+.rev-card{background:var(--bg);border-radius:17px;padding:20px;border:1.5px solid var(--border);transition:box-shadow .2s,transform .2s;}
+.rev-card:hover{box-shadow:0 8px 26px rgba(13,92,46,.1);transform:translateY(-3px);}
+.rev-stars{color:var(--accent);font-size:.92rem;margin-bottom:9px;letter-spacing:1px;}
+.rev-text{color:var(--text2);font-size:.84rem;line-height:1.65;margin-bottom:14px;}
+.reviewer{display:flex;align-items:center;gap:9px;}
+.rev-av{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--g3),var(--g2));color:#fff;font-weight:700;font-size:.86rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.rev-name{font-size:.83rem;font-weight:600;color:var(--text);}
+.rev-when{font-size:.71rem;color:var(--text2);}
+.google-badge{display:inline-flex;align-items:center;gap:6px;background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:5px 10px;font-size:.73rem;color:var(--text2);margin-top:8px;}
+
+/* ── HEALTH TIPS ── */
+.tips{background:var(--bg);}
+.tips-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px;margin-top:40px;}
+.tip-card{background:var(--card);border-radius:17px;overflow:hidden;box-shadow:0 2px 12px rgba(13,92,46,.05);border:1px solid var(--border);transition:transform .25s,box-shadow .25s;cursor:pointer;}
+.tip-card:hover{transform:translateY(-5px);box-shadow:0 14px 32px rgba(13,92,46,.12);}
+.tip-top{padding:22px 18px 14px;}
+.tip-em{font-size:2rem;display:block;margin-bottom:8px;}
+.tip-tag{font-size:.69rem;letter-spacing:2px;text-transform:uppercase;color:var(--g2);font-weight:700;margin-bottom:5px;}
+.tip-card h3{font-size:.89rem;font-weight:600;color:var(--text);line-height:1.4;}
+.tip-bot{padding:10px 18px 15px;border-top:1px solid var(--border);font-size:.76rem;color:var(--text2);line-height:1.5;}
+
+/* ── EMERGENCY BANNER ── */
+.emergency{background:linear-gradient(90deg,#991b1b,var(--red));padding:15px 6%;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;text-align:center;}
+.emergency p{color:#fff;font-size:.88rem;}
+.emergency a{color:#fff;font-weight:700;text-decoration:underline;}
+
+/* ── MAP ── */
+.map-sec{background:var(--card);padding-bottom:0;}
+.map-wrap{display:grid;grid-template-columns:1fr 1.6fr;gap:46px;align-items:start;margin-top:34px;margin-bottom:50px;}
+.map-details{display:flex;flex-direction:column;gap:12px;}
+.md{display:flex;gap:12px;align-items:flex-start;background:var(--bg);border-radius:12px;padding:13px 15px;border:1px solid var(--border);}
+.md-ico{width:34px;height:34px;border-radius:9px;background:var(--card);display:flex;align-items:center;justify-content:center;font-size:.95rem;flex-shrink:0;box-shadow:0 1px 5px rgba(13,92,46,.08);}
+.md strong{font-size:.86rem;color:var(--text);}
+.md p{font-size:.78rem;color:var(--text2);margin-top:2px;line-height:1.4;}
+.map-btns{margin-top:20px;display:flex;gap:11px;flex-wrap:wrap;}
+.map-frame{border-radius:20px;overflow:hidden;height:370px;border:2px solid var(--border);box-shadow:var(--shadow);}
+.map-frame iframe{width:100%;height:100%;border:none;display:block;}
+
+/* ── FOOTER ── */
+footer{background:#060f09;padding:54px 6% 24px;}
+.footer-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px;margin-bottom:40px;}
+.f-logo{display:flex;align-items:center;gap:10px;margin-bottom:13px;}
+.f-brand{font-family:'Playfair Display',serif;font-size:1.12rem;font-weight:900;color:#fff;}
+.f-sub2{font-size:.6rem;color:rgba(255,255,255,.36);letter-spacing:2px;text-transform:uppercase;}
+.footer-brand p{color:rgba(255,255,255,.34);font-size:.79rem;line-height:1.65;max-width:205px;}
+.footer-col h4{color:#fff;font-size:.83rem;font-weight:600;margin-bottom:13px;}
+.footer-col a{display:block;color:rgba(255,255,255,.37);font-size:.79rem;text-decoration:none;margin-bottom:8px;transition:color .2s;}
+.footer-col a:hover{color:var(--g3);}
+.footer-bot{border-top:1px solid rgba(255,255,255,.06);padding-top:18px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.footer-bot p{color:rgba(255,255,255,.22);font-size:.75rem;}
+.footer-bot span{color:var(--g3);}
+
+/* ── FLOATING ── */
+.wa-float{position:fixed;bottom:26px;right:26px;z-index:999;width:56px;height:56px;border-radius:50%;background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.6rem;text-decoration:none;box-shadow:0 6px 20px rgba(37,211,102,.45);animation:wap 2s infinite;transition:transform .2s;}
+.wa-float:hover{transform:scale(1.1);}
+@keyframes wap{0%,100%{box-shadow:0 6px 20px rgba(37,211,102,.45);}50%{box-shadow:0 6px 36px rgba(37,211,102,.7);}}
+.scroll-top{position:fixed;bottom:26px;left:26px;z-index:999;width:42px;height:42px;border-radius:50%;background:var(--g2);color:#fff;border:none;cursor:pointer;font-size:1.1rem;display:none;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(13,92,46,.3);transition:background .2s;}
+.scroll-top:hover{background:var(--g1);}
+.scroll-top.show{display:flex;}
+
+/* ── RESPONSIVE ── */
+/* ── TABLET (max 920px) ── */
+@media(max-width:920px){
+  .nav-links,.nav-cta{display:none;}
+  .hamburger{display:flex;}
+  .info-strip{grid-template-columns:1fr 1fr;}
+  .icard:nth-child(2){border-right:none;}
+  .icard:nth-child(3){border-top:1px solid var(--border);}
+  .rx-grid,.del-grid,.map-wrap,.order-grid{grid-template-columns:1fr;}
+  .footer-top{grid-template-columns:1fr 1fr;}
+  .gallery-grid{grid-template-columns:repeat(2,1fr);}
+  /* Order section on tablet */
+  .order-grid{gap:36px;}
+  /* Map height reduced */
+  .map-frame{height:280px;}
+  /* Emergency grid */
+  .emerg-grid{grid-template-columns:repeat(2,1fr);}
+  /* del-visual not needed on tablet */
+  .del-visual{padding:32px 24px;}
+}
+
+/* ── MOBILE (max 600px) ── */
+@media(max-width:600px){
+  /* Navbar */
+  .navbar{padding:0 4%;height:60px;}
+  .nav-right{gap:8px;}
+  .dark-toggle{width:34px;height:34px;font-size:1rem;}
+
+  /* Hero */
+  .hero{padding-top:60px;}
+  .hero-inner{padding:40px 5% 80px;}
+  .pill{font-size:.72rem;padding:7px 14px;margin-bottom:20px;}
+  .hero h1{font-size:2.2rem;margin-bottom:16px;}
+  .hero-desc{font-size:.92rem;margin-bottom:28px;}
+  .hero-btns{gap:9px;}
+  .btn{padding:11px 18px;font-size:.84rem;}
+  .hero-stats{gap:14px;margin-top:36px;}
+  .sdiv{display:none;}
+  .stn{font-size:1.7rem;}
+  .stl{font-size:.65rem;}
+
+  /* Info strip - single column */
+  .info-strip{grid-template-columns:1fr;}
+  .icard{border-right:none;border-bottom:1px solid var(--border);padding:16px 20px;}
+  .icard:last-child{border-bottom:none;}
+
+  /* All sections */
+  section{padding:52px 5%;}
+  .med-search-sec{padding:40px 5%;}
+  .brands{padding:40px 5%;}
+
+  /* Search bar full width */
+  .search-bar{max-width:100%;}
+  .search-bar input{font-size:.84rem;padding:12px 14px 12px 40px;}
+  .search-bar button{padding:12px 14px;font-size:.84rem;}
+  .search-icon{left:12px;font-size:1rem;}
+
+  /* Medicine grid - 1 column on small phones */
+  .med-grid{grid-template-columns:1fr;}
+  .cat-grid{grid-template-columns:repeat(2,1fr);gap:10px;}
+  .cat-card{padding:18px 12px;}
+  .cat-em{font-size:1.8rem;}
+
+  /* Brands */
+  .brands-grid{gap:10px;}
+  .brand-pill{padding:9px 16px;font-size:.82rem;}
+
+  /* Emergency grid - 1 col on mobile */
+  .emerg-grid{grid-template-columns:1fr;}
+  .emerg-card{padding:15px;}
+
+  /* Prescription */
+  .rx-grid{gap:36px;}
+  .rx-card{padding:22px 18px;}
+  .drop-zone{padding:24px 14px;}
+  .steps{gap:14px;}
+  .flow-arrow{gap:6px;padding:12px 14px;}
+  .flow-step .fi{font-size:1.2rem;}
+  .flow-step p{font-size:.68rem;}
+  .flow-arr{font-size:1rem;}
+
+  /* Order form */
+  .order-grid{gap:28px;}
+  .order-card{padding:22px 18px;}
+
+  /* Delivery */
+  .del-grid{gap:28px;}
+  .del-visual{padding:32px 22px;}
+  .del-em{font-size:3.5rem;}
+
+  /* Gallery */
+  .gallery-grid{grid-template-columns:1fr 1fr;gap:10px;}
+  .gal-img{font-size:2.5rem;}
+
+  /* Reviews */
+  .rev-head{flex-direction:column;align-items:flex-start;}
+  .overall{width:100%;}
+  .rev-grid{grid-template-columns:1fr;}
+
+  /* Tips */
+  .tips-grid{grid-template-columns:1fr 1fr;gap:12px;}
+
+  /* Map */
+  .map-wrap{gap:28px;}
+  .map-frame{height:240px;border-radius:14px;}
+
+  /* Footer */
+  .footer-top{grid-template-columns:1fr;gap:28px;}
+  footer{padding:40px 5% 20px;}
+  .footer-bot{flex-direction:column;align-items:flex-start;gap:6px;}
+
+  /* Floating WA button */
+  .wa-float{width:50px;height:50px;font-size:1.4rem;bottom:18px;right:18px;}
+  .scroll-top{width:38px;height:38px;bottom:18px;left:18px;font-size:1rem;}
+
+  /* Emergency banner */
+  .emergency{padding:13px 5%;font-size:.82rem;}
+}
+
+/* ── VERY SMALL PHONES (max 380px) ── */
+@media(max-width:380px){
+  .hero h1{font-size:1.9rem;}
+  .cat-grid{grid-template-columns:1fr 1fr;}
+  .tips-grid{grid-template-columns:1fr;}
+  .gallery-grid{grid-template-columns:1fr;}
+  .hero-btns .btn:nth-child(3),.hero-btns .btn:nth-child(4){display:none;}
+  .brands-grid{gap:8px;}
+  .brand-pill{font-size:.78rem;padding:8px 12px;}
+}
+</style>
+</head>
+<body>
+
+<!-- Floating Elements -->
+<a class="wa-float" href="https://wa.me/918571223028?text=Hello%2C%20I%20want%20to%20order%20medicines%20from%20Murali%20Medicals" target="_blank" title="WhatsApp Order">💬</a>
+<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<!-- ══════════ NAVBAR ══════════ -->
+<nav class="navbar" id="navbar">
+  <a href="#home" class="nav-logo">
+    <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+      <rect width="40" height="40" rx="10" fill="#1a7a4a"/>
+      <rect x="16" y="7" width="8" height="26" rx="3.5" fill="white"/>
+      <rect x="7" y="16" width="26" height="8" rx="3.5" fill="white"/>
+      <circle cx="33" cy="7" r="4.5" fill="#f4a020"/>
+    </svg>
+    <div class="nav-logo-text">
+      <span class="brand">Murali Medicals</span>
+      <span class="sub">Madanapalle · Pharmacy</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#med-search">Medicines</a></li>
+    <li><a href="#prescription">Prescription</a></li>
+    <li><a href="#order">Order</a></li>
+    <li><a href="#find-us">Find Us</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="dark-toggle" id="darkBtn" onclick="toggleDark()" title="Toggle dark mode">🌙</button>
+    <a class="nav-cta" href="tel:+918571223028">📞 Call Now</a>
+  </div>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home" onclick="closeMenu()">🏠 Home</a>
+  <a href="#med-search" onclick="closeMenu()">🔍 Medicine Search</a>
+  <a href="#medicines" onclick="closeMenu()">💊 Categories</a>
+  <a href="#prescription" onclick="closeMenu()">📋 Prescription</a>
+  <a href="#order" onclick="closeMenu()">🛒 Order Medicines</a>
+  <a href="#delivery" onclick="closeMenu()">🚚 Delivery</a>
+  <a href="#find-us" onclick="closeMenu()">📍 Find Us</a>
+  <a href="tel:+918571223028" style="color:#4ade80;font-weight:700;">📞 085712 23028</a>
+</div>
+
+<!-- ══════════ HERO ══════════ -->
+<section class="hero" id="home">
+  <div class="hero-pat"></div>
+  <div class="orb1"></div><div class="orb2"></div>
+  <div class="hero-inner">
+    <div class="pill"><div class="live"></div> Open Now · Closes 11 PM</div>
+    <h1>Your Trusted <span class="ac">Pharmacy</span><br/>in <span class="it">Madanapalle</span></h1>
+    <p class="hero-desc">Quality medicines, expert advice, and fast home delivery — all just a call away. Serving Madanapalle with genuine care every day.</p>
+    <div class="hero-btns">
+      <a class="btn btn-white" href="tel:+918571223028">📞 Call Now</a>
+      <a class="btn btn-wa" href="https://wa.me/918571223028" target="_blank">💬 WhatsApp</a>
+      <a class="btn btn-ghost" href="#order">🛒 Order Medicines</a>
+      <a class="btn btn-ghost" href="#find-us">📍 Directions</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><div class="stn"><b>4.7</b>★</div><div class="stl">Google Rating</div></div>
+      <div class="sdiv"></div>
+      <div class="stat"><div class="stn"><b>10</b>+</div><div class="stl">Reviews</div></div>
+      <div class="sdiv"></div>
+      <div class="stat"><div class="stn"><b>11</b>PM</div><div class="stl">Open Until</div></div>
+      <div class="sdiv"></div>
+      <div class="stat"><div class="stn"><b>24/7</b></div><div class="stl">WhatsApp</div></div>
+    </div>
+  </div>
+  <div class="hero-wave"></div>
+</section>
+
+<!-- INFO STRIP -->
+<div class="info-strip">
+  <div class="icard"><div class="icard-ico">⏰</div><div><p>Store Hours</p><strong><span class="open-dot"></span>Open · Closes 11 PM</strong></div></div>
+  <div class="icard"><div class="icard-ico">📞</div><div><p>Phone</p><strong><a href="tel:+918571223028" style="color:var(--text);text-decoration:none;">085712 23028</a></strong></div></div>
+  <div class="icard"><div class="icard-ico">📍</div><div><p>Location</p><strong>Patel Rd, P&amp;T Colony, Madanapalle</strong></div></div>
+  <div class="icard"><div class="icard-ico">⭐</div><div><p>Google Rating</p><strong>4.7 / 5.0 · 10 Reviews</strong></div></div>
+</div>
+
+<!-- ══════════ MEDICINE AVAILABILITY SEARCH ══════════ -->
+<section class="med-search-sec" id="med-search">
+  <div class="s-label">🔍 Medicine Search</div>
+  <div class="s-title">Check Medicine Availability</div>
+  <p class="s-sub">Search any medicine to instantly check if it's available at our store right now.</p>
+  <div class="search-bar">
+    <span class="search-icon">🔍</span>
+    <input type="text" id="medQ" placeholder="Search: Dolo, Crocin, Insulin, Paracetamol..." oninput="searchMed()"/>
+    <button onclick="searchMed()">Search</button>
+  </div>
+  <div class="med-results" id="medResults">
+    <p class="med-results-title" id="medResultsTitle"></p>
+    <div class="med-grid" id="medGrid"></div>
+  </div>
+</section>
+
+<!-- ══════════ MEDICINE CATEGORIES ══════════ -->
+<section class="cats" id="medicines">
+  <div class="s-label">💊 Medicine Categories</div>
+  <div class="s-title">Find What You Need</div>
+  <p class="s-sub">We stock a wide range of medicines and healthcare products for every need.</p>
+  <div class="cat-grid">
+    <div class="cat-card"><span class="cat-em">🤒</span><h3>Fever &amp; Cold</h3><p>Paracetamol, antivirals</p></div>
+    <div class="cat-card"><span class="cat-em">💉</span><h3>Diabetes Care</h3><p>Insulin, glucometers</p></div>
+    <div class="cat-card"><span class="cat-em">💊</span><h3>Vitamins</h3><p>Supplements, minerals</p></div>
+    <div class="cat-card"><span class="cat-em">🩹</span><h3>First Aid</h3><p>Bandages, antiseptics</p></div>
+    <div class="cat-card"><span class="cat-em">🍼</span><h3>Baby Care</h3><p>Infant formula, diapers</p></div>
+    <div class="cat-card"><span class="cat-em">😣</span><h3>Pain Relief</h3><p>Analgesics, sprays</p></div>
+    <div class="cat-card"><span class="cat-em">❤️</span><h3>Heart &amp; BP</h3><p>Cardiac medicines</p></div>
+    <div class="cat-card"><span class="cat-em">🫁</span><h3>Respiratory</h3><p>Inhalers, cough syrup</p></div>
+    <div class="cat-card"><span class="cat-em">🧴</span><h3>Skin Care</h3><p>Creams, ointments</p></div>
+    <div class="cat-card"><span class="cat-em">🧠</span><h3>Neurology</h3><p>Nerve supplements</p></div>
+    <div class="cat-card"><span class="cat-em">🦷</span><h3>Dental Care</h3><p>Toothache, gels</p></div>
+    <div class="cat-card"><span class="cat-em">👁️</span><h3>Eye &amp; Ear</h3><p>Drops, ointments</p></div>
+  </div>
+</section>
+
+<!-- ══════════ BRANDS ══════════ -->
+<section class="brands" id="brands">
+  <div class="s-label">🏭 Trusted Brands</div>
+  <div class="s-title">Medicines from Top Brands</div>
+  <p class="s-sub">We stock medicines from India's most trusted pharmaceutical companies — all 100% authentic.</p>
+  <div class="brands-grid">
+    <div class="brand-pill"><span>💊</span> Cipla</div>
+    <div class="brand-pill"><span>🏥</span> Sun Pharma</div>
+    <div class="brand-pill"><span>💉</span> Dr. Reddy's</div>
+    <div class="brand-pill"><span>🔬</span> Abbott</div>
+    <div class="brand-pill"><span>🌿</span> Himalaya</div>
+    <div class="brand-pill"><span>❤️</span> Lupin</div>
+    <div class="brand-pill"><span>🧬</span> Zydus</div>
+    <div class="brand-pill"><span>⚕️</span> Mankind</div>
+    <div class="brand-pill"><span>🏨</span> Apollo Pharmacy</div>
+    <div class="brand-pill"><span>💊</span> Alkem</div>
+    <div class="brand-pill"><span>🌡️</span> Torrent</div>
+    <div class="brand-pill"><span>🧪</span> Glenmark</div>
+  </div>
+</section>
+
+<!-- ══════════ EMERGENCY MEDICINES ══════════ -->
+<section class="emerg-meds" id="emergency-stock">
+  <div class="s-label" style="color:var(--g3)">🚨 Emergency Stock</div>
+  <div class="s-title" style="color:#fff">Emergency Equipment Available</div>
+  <p class="s-sub" style="color:rgba(255,255,255,.5)">We keep essential emergency medicines and equipment ready at all times. No waiting — we've got you covered.</p>
+  <div class="emerg-grid">
+    <div class="emerg-card"><div class="emerg-icon">🫀</div><div><strong>BP Machine</strong><p>Blood pressure monitor available</p></div></div>
+    <div class="emerg-card"><div class="emerg-icon">📊</div><div><strong>Glucometer</strong><p>Instant blood sugar testing</p></div></div>
+    <div class="emerg-card"><div class="emerg-icon">💨</div><div><strong>Nebulizer</strong><p>Asthma &amp; respiratory aid</p></div></div>
+    <div class="emerg-card"><div class="emerg-icon">😷</div><div><strong>Oxygen Mask</strong><p>Emergency oxygen equipment</p></div></div>
+    <div class="emerg-card"><div class="emerg-icon">🩹</div><div><strong>First Aid Kit</strong><p>Complete emergency kit</p></div></div>
+    <div class="emerg-card"><div class="emerg-icon">💊</div><div><strong>Life-Saving Meds</strong><p>Emergency cardiac &amp; critical drugs</p></div></div>
+    <div class="emerg-card"><div class="emerg-icon">🩸</div><div><strong>IV Fluids</strong><p>Saline &amp; glucose drips</p></div></div>
+    <div class="emerg-card"><div class="emerg-icon">🌡️</div><div><strong>Thermometer</strong><p>Digital &amp; contactless available</p></div></div>
+  </div>
+</section>
+
+<!-- ══════════ PRESCRIPTION UPLOAD ══════════ -->
+<section class="rx-sec" id="prescription">
+  <div class="rx-b1"></div><div class="rx-b2"></div>
+  <div class="rx-grid">
+    <div>
+      <div class="s-label" style="color:var(--g3)">📋 Prescription Upload</div>
+      <div class="s-title">Upload &amp; We'll Prepare<br/>Your Medicines</div>
+      <p class="s-sub">No need to visit the store. Upload your prescription — we'll prepare and deliver your medicines.</p>
+      <div class="steps">
+        <div class="step"><div class="step-n">1</div><div><h4>Upload Prescription</h4><p>Take a clear photo and upload it here.</p></div></div>
+        <div class="sline"></div>
+        <div class="step"><div class="step-n">2</div><div><h4>File Saved Securely</h4><p>Your prescription is received by our team instantly.</p></div></div>
+        <div class="sline"></div>
+        <div class="step"><div class="step-n">3</div><div><h4>Pharmacist Calls You</h4><p>We verify details and confirm your order by phone.</p></div></div>
+        <div class="sline"></div>
+        <div class="step"><div class="step-n">4</div><div><h4>Pickup or Delivery</h4><p>Collect from store or get home delivery.</p></div></div>
+      </div>
+      <div class="flow-arrow">
+        <div class="flow-step"><span class="fi">📸</span><p>Upload</p></div>
+        <div class="flow-arr">→</div>
+        <div class="flow-step"><span class="fi">👨‍⚕️</span><p>Verify</p></div>
+        <div class="flow-arr">→</div>
+        <div class="flow-step"><span class="fi">📦</span><p>Prepare</p></div>
+        <div class="flow-arr">→</div>
+        <div class="flow-step"><span class="fi">🚚</span><p>Deliver</p></div>
+      </div>
+    </div>
+    <div class="rx-card">
+      <div class="rx-title"><span>📋</span> Upload Prescription</div>
+      <div class="drop-zone" id="dropZone" onclick="document.getElementById('rxFile').click()"
+           ondragover="event.preventDefault();this.classList.add('drag')"
+           ondragleave="this.classList.remove('drag')"
+           ondrop="handleDrop(event)">
+        <span class="drop-ico">📸</span>
+        <p class="d1">Drag &amp; drop or <b>browse file</b></p>
+        <p class="d2">JPG, PNG, PDF · Max 10MB</p>
+        <input type="file" id="rxFile" accept="image/*,.pdf" style="display:none" onchange="handleFile(this)"/>
+      </div>
+      <div id="fname"></div>
+      <input class="rx-inp" type="tel" id="rxPhone" placeholder="📱 Your Phone Number *"/>
+      <input class="rx-inp" type="text" id="rxName" placeholder="👤 Patient Name (optional)"/>
+      <input class="rx-inp" type="text" id="rxNote" placeholder="📝 Special Instructions (optional)"/>
+      <button class="rx-btn" onclick="submitRx()">✅ Submit Prescription</button>
+      <div class="rx-ok" id="rxOk">🎉 Received! Our pharmacist will call you within 30 minutes.<br/><small style="opacity:.7">You'll get a confirmation call on your number.</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ ONLINE ORDER FORM ══════════ -->
+<section class="order-sec" id="order">
+  <div class="s-label">🛒 Order Medicines</div>
+  <div class="s-title">Order Online — Fast &amp; Easy</div>
+  <div class="order-grid">
+    <div class="order-card">
+      <h3>Place Your Order</h3>
+      <p class="oc-sub">Fill in the details and we'll confirm your order and arrange delivery.</p>
+      <input class="form-inp" type="text" id="oName" placeholder="👤 Your Full Name *"/>
+      <input class="form-inp" type="tel" id="oPhone" placeholder="📱 Phone Number *"/>
+      <input class="form-inp" type="text" id="oAddress" placeholder="📍 Delivery Address *"/>
+      <textarea class="form-inp" id="oMeds" placeholder="💊 Medicine names &amp; quantities (e.g. Dolo 650 × 2 strips, Crocin × 1)"></textarea>
+      <input class="form-inp" type="text" id="oTime" placeholder="⏰ Preferred delivery time (optional)"/>
+      <button class="form-btn" onclick="submitOrder()">📦 Place Order</button>
+      <div class="form-ok" id="formOk">✅ Order received! We'll call to confirm within 15 minutes.</div>
+    </div>
+    <div class="order-info">
+      <h3>3 Ways to Order</h3>
+      <p>Choose whichever is easiest for you. We're always happy to help!</p>
+      <div class="order-ways">
+        <div class="oway">
+          <div class="oway-ico">🌐</div>
+          <div><strong>Online Form</strong><p>Fill the form — we'll call to confirm and deliver</p></div>
+        </div>
+        <div class="oway">
+          <div class="oway-ico">💬</div>
+          <div><strong>WhatsApp Order</strong><p>Send medicine names to <a href="https://wa.me/918571223028" target="_blank" style="color:var(--g2);font-weight:600;">+91 85712 23028</a></p></div>
+        </div>
+        <div class="oway">
+          <div class="oway-ico">📞</div>
+          <div><strong>Call &amp; Order</strong><p>Just call <a href="tel:+918571223028" style="color:var(--g2);font-weight:600;">085712 23028</a> and place order</p></div>
+        </div>
+      </div>
+      <a class="btn btn-wa" href="https://wa.me/918571223028?text=Hi%2C%20I%20want%20to%20order%20medicines" target="_blank" style="width:100%;justify-content:center;">💬 Quick WhatsApp Order</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ HOME DELIVERY ══════════ -->
+<section class="delivery" id="delivery">
+  <div class="del-grid">
+    <div>
+      <div class="s-label">🚚 Home Delivery</div>
+      <div class="s-title">Medicines at<br/>Your Doorstep</div>
+      <p class="s-sub">Don't step out when you're unwell. Order via phone, WhatsApp, or online and we'll deliver across Madanapalle.</p>
+      <div class="del-feats">
+        <div class="del-feat"><div class="del-ico">⚡</div><div><strong>Fast Delivery</strong><p>Quick turnaround within Madanapalle</p></div></div>
+        <div class="del-feat"><div class="del-ico">💬</div><div><strong>WhatsApp Orders</strong><p>Send prescription or medicine list</p></div></div>
+        <div class="del-feat"><div class="del-ico">📞</div><div><strong>Call &amp; Order</strong><p>Order over the phone, we'll handle rest</p></div></div>
+        <div class="del-feat"><div class="del-ico">✅</div><div><strong>Genuine Medicines</strong><p>100% authentic from certified distributors</p></div></div>
+      </div>
+      <div class="del-cta">
+        <a class="btn btn-green" href="https://wa.me/918571223028" target="_blank">💬 WhatsApp Order</a>
+        <a class="btn btn-outline-green" href="tel:+918571223028">📞 Call to Order</a>
+      </div>
+    </div>
+    <div class="del-visual">
+      <span class="del-em">🚚</span>
+      <h3>Order Now</h3>
+      <p>Delivering medicines across Madanapalle. Call or WhatsApp any time before closing.</p>
+      <div class="hours-pill">🕗 Open 8 AM – 11 PM Daily</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ GALLERY ══════════ -->
+<section class="gallery" id="gallery">
+  <div class="s-label">📸 Our Store</div>
+  <div class="s-title">Pharmacy Gallery</div>
+  <p class="s-sub">A well-stocked, clean, and organised pharmacy ready to serve you every day.</p>
+  <div class="gallery-grid">
+    <div class="gal-item"><div class="gal-img gal-1">🏪</div><div class="gal-overlay"><span class="gal-label">Store Front</span></div></div>
+    <div class="gal-item"><div class="gal-img gal-2">💊</div><div class="gal-overlay"><span class="gal-label">Medicine Shelves</span></div></div>
+    <div class="gal-item"><div class="gal-img gal-3">🧾</div><div class="gal-overlay"><span class="gal-label">Billing Counter</span></div></div>
+    <div class="gal-item"><div class="gal-img gal-4">👨‍⚕️</div><div class="gal-overlay"><span class="gal-label">Our Staff</span></div></div>
+    <div class="gal-item"><div class="gal-img gal-5">📦</div><div class="gal-overlay"><span class="gal-label">Storage &amp; Stock</span></div></div>
+    <div class="gal-item"><div class="gal-img gal-6">🚚</div><div class="gal-overlay"><span class="gal-label">Delivery Service</span></div></div>
+  </div>
+</section>
+
+<!-- ══════════ REVIEWS ══════════ -->
+<section class="reviews" id="reviews">
+  <div class="rev-head">
+    <div>
+      <div class="s-label">⭐ Google Reviews</div>
+      <div class="s-title">What Our Customers Say</div>
+    </div>
+    <div class="overall">
+      <div class="big-sc">4.7</div>
+      <div>
+        <div class="sc-stars">★★★★★</div>
+        <div class="sc-count">10 Google Reviews</div>
+        <div class="google-badge">🔵 Verified on Google Maps</div>
+      </div>
+    </div>
+  </div>
+  <div class="rev-grid">
+    <div class="rev-card"><div class="rev-stars">★★★★★</div><p class="rev-text">Good service and medicines are always available. Staff is very knowledgeable and helpful. Highly recommend!</p><div class="reviewer"><div class="rev-av">R</div><div><div class="rev-name">Ramesh K.</div><div class="rev-when">2 months ago · Google</div></div></div></div>
+    <div class="rev-card"><div class="rev-stars">★★★★★</div><p class="rev-text">Friendly staff and quick response. They always have rare medicines in stock. Best pharmacy in Madanapalle!</p><div class="reviewer"><div class="rev-av">S</div><div><div class="rev-name">Sravani M.</div><div class="rev-when">3 months ago · Google</div></div></div></div>
+    <div class="rev-card"><div class="rev-stars">★★★★☆</div><p class="rev-text">Very convenient location on Patel Road. Open late which is great for emergencies. Good range of products.</p><div class="reviewer"><div class="rev-av">V</div><div><div class="rev-name">Venkat R.</div><div class="rev-when">1 month ago · Google</div></div></div></div>
+    <div class="rev-card"><div class="rev-stars">★★★★★</div><p class="rev-text">They helped me find an alternative when my medicine was out of stock. Very professional and caring service!</p><div class="reviewer"><div class="rev-av">L</div><div><div class="rev-name">Lakshmi D.</div><div class="rev-when">5 months ago · Google</div></div></div></div>
+  </div>
+  <div style="margin-top:24px;text-align:center;">
+    <a class="btn btn-outline-green" href="https://maps.google.com/?q=Murali+Medicals+Madanapalle" target="_blank" style="display:inline-flex;">⭐ Write a Review on Google</a>
+  </div>
+</section>
+
+<!-- ══════════ HEALTH TIPS ══════════ -->
+<section class="tips" id="tips">
+  <div class="s-label">🩺 Health Tips</div>
+  <div class="s-title">Stay Healthy, Stay Informed</div>
+  <div class="tips-grid">
+    <div class="tip-card"><div class="tip-top"><span class="tip-em">🤒</span><div class="tip-tag">Fever Care</div><h3>Managing Fever at Home</h3></div><div class="tip-bot">Stay hydrated · Rest well · Take paracetamol as advised · See doctor if over 3 days</div></div>
+    <div class="tip-card"><div class="tip-top"><span class="tip-em">💉</span><div class="tip-tag">Diabetes</div><h3>Controlling Blood Sugar Daily</h3></div><div class="tip-bot">Monitor regularly · Low-sugar diet · Stay active · Take medication on time</div></div>
+    <div class="tip-card"><div class="tip-top"><span class="tip-em">🩹</span><div class="tip-tag">First Aid</div><h3>Basic First Aid Everyone Should Know</h3></div><div class="tip-bot">Clean wounds · Apply antiseptic · Bandage properly · Know when to see a doctor</div></div>
+    <div class="tip-card"><div class="tip-top"><span class="tip-em">💊</span><div class="tip-tag">Vitamins</div><h3>Why Vitamins Matter Every Day</h3></div><div class="tip-bot">B12 for energy · D3 for immunity · Iron for blood · Zinc for skin &amp; healing</div></div>
+  </div>
+</section>
+
+<!-- EMERGENCY BANNER -->
+<div class="emergency">
+  <p>🚨 <strong>Medical Emergency?</strong> Call us immediately — <a href="tel:+918571223028">085712 23028</a> · Open till 11 PM daily</p>
+</div>
+
+<!-- ══════════ MAP ══════════ -->
+<section class="map-sec" id="find-us">
+  <div class="s-label">📍 Find Us</div>
+  <div class="s-title">Visit Our Store</div>
+  <div class="map-wrap">
+    <div>
+      <div class="map-details">
+        <div class="md"><div class="md-ico">📍</div><div><strong>Address</strong><p>D, 2-216A, Patel Rd, P&amp;T Colony,<br/>Madanapalle, Andhra Pradesh 517325</p></div></div>
+        <div class="md"><div class="md-ico">⏰</div><div><strong>Working Hours</strong><p>Open Daily · Closes at 11 PM<br/><span style="color:var(--g2);font-size:.73rem;font-weight:600;">✅ Currently Open</span></p></div></div>
+        <div class="md"><div class="md-ico">📞</div><div><strong>Phone</strong><p><a href="tel:+918571223028" style="color:var(--g2);font-weight:600;text-decoration:none;">085712 23028</a></p></div></div>
+        <div class="md"><div class="md-ico">💬</div><div><strong>WhatsApp</strong><p><a href="https://wa.me/918571223028" target="_blank" style="color:var(--g2);font-weight:600;text-decoration:none;">+91 85712 23028</a></p></div></div>
+      </div>
+      <div class="map-btns">
+        <a class="btn btn-green" style="font-size:.86rem;" href="https://www.google.com/maps/dir/?api=1&destination=13.5526,78.5007" target="_blank">🗺️ Get Directions</a>
+        <a class="btn btn-outline-green" style="font-size:.86rem;" href="https://maps.google.com/?q=Murali+Medicals+Patel+Road+Madanapalle" target="_blank">📍 View on Maps</a>
+      </div>
+    </div>
+    <div class="map-frame">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15511.4!2d78.4937!3d13.5516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb2e6c6efc08035%3A0x400ee64dbcbf7e0!2sMadanapalle%2C%20Andhra%20Pradesh%20517325!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="f-logo">
+        <svg width="34" height="34" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+          <rect width="40" height="40" rx="10" fill="#1a7a4a"/>
+          <rect x="16" y="7" width="8" height="26" rx="3.5" fill="white"/>
+          <rect x="7" y="16" width="26" height="8" rx="3.5" fill="white"/>
+          <circle cx="33" cy="7" r="4.5" fill="#f4a020"/>
+        </svg>
+        <div><div class="f-brand">Murali Medicals</div><div class="f-sub2">Madanapalle · Pharmacy</div></div>
+      </div>
+      <p>Trusted pharmacy in Madanapalle. Quality medicines and genuine care since day one.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="#home">Home</a>
+      <a href="#med-search">Medicine Search</a>
+      <a href="#medicines">Categories</a>
+      <a href="#prescription">Prescription Upload</a>
+      <a href="#order">Order Medicines</a>
+      <a href="#find-us">Find Us</a>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="#prescription">Rx Upload</a>
+      <a href="#delivery">Home Delivery</a>
+      <a href="#emergency-stock">Emergency Meds</a>
+      <a href="#brands">Medicine Brands</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#tips">Health Tips</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="tel:+918571223028">📞 085712 23028</a>
+      <a href="https://wa.me/918571223028" target="_blank">💬 WhatsApp Order</a>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=13.5526,78.5007" target="_blank">📍 Get Directions</a>
+      <a href="https://maps.google.com/?q=Murali+Medicals+Madanapalle" target="_blank">⭐ Review on Google</a>
+    </div>
+  </div>
+  <div class="footer-bot">
+    <p>© 2026 Murali Medicals, Madanapalle, Andhra Pradesh. All rights reserved.</p>
+    <p>Open Daily · 8 AM – 11 PM · <span>⭐ 4.7 Google Rating</span></p>
+  </div>
+</footer>
+
+<!-- ══════════════════════════════════════
+     JAVASCRIPT
+══════════════════════════════════════ -->
+<script>
+/* ── MEDICINE DATABASE ── */
+const medicines = [
+  {name:"Dolo 650",type:"Fever / Pain Relief",stock:true},
+  {name:"Crocin 500mg",type:"Fever / Pain Relief",stock:true},
+  {name:"Paracetamol 500mg",type:"Fever / Pain Relief",stock:true},
+  {name:"Paracetamol 650mg",type:"Fever / Pain Relief",stock:true},
+  {name:"Combiflam",type:"Pain Relief",stock:true},
+  {name:"Ibuprofen 400mg",type:"Pain Relief / Anti-inflammatory",stock:true},
+  {name:"Aspirin 75mg",type:"Cardiac / Blood Thinner",stock:true},
+  {name:"Metformin 500mg",type:"Diabetes",stock:true},
+  {name:"Metformin 1000mg",type:"Diabetes",stock:true},
+  {name:"Insulin Glargine",type:"Diabetes – Insulin",stock:true},
+  {name:"Insulin Regular",type:"Diabetes – Insulin",stock:false},
+  {name:"Glimepiride",type:"Diabetes",stock:true},
+  {name:"Amoxicillin 500mg",type:"Antibiotic",stock:true},
+  {name:"Azithromycin 500mg",type:"Antibiotic",stock:true},
+  {name:"Cetirizine 10mg",type:"Allergy / Cold",stock:true},
+  {name:"Loratadine",type:"Allergy",stock:false},
+  {name:"Pantoprazole 40mg",type:"Acidity / Gastro",stock:true},
+  {name:"Omeprazole 20mg",type:"Acidity / Gastro",stock:true},
+  {name:"Ranitidine",type:"Acidity",stock:false},
+  {name:"Atorvastatin 10mg",type:"Cholesterol",stock:true},
+  {name:"Atorvastatin 20mg",type:"Cholesterol",stock:true},
+  {name:"Amlodipine 5mg",type:"Blood Pressure",stock:true},
+  {name:"Telmisartan 40mg",type:"Blood Pressure",stock:true},
+  {name:"Losartan 50mg",type:"Blood Pressure",stock:true},
+  {name:"Vitamin D3 60K",type:"Vitamin",stock:true},
+  {name:"Vitamin B12",type:"Vitamin",stock:true},
+  {name:"Vitamin C 500mg",type:"Vitamin",stock:true},
+  {name:"Iron + Folic Acid",type:"Supplement",stock:true},
+  {name:"Calcium + D3",type:"Supplement",stock:true},
+  {name:"Zinc Tablets",type:"Supplement / Immunity",stock:true},
+  {name:"Salbutamol Inhaler",type:"Respiratory",stock:true},
+  {name:"Budecort Inhaler",type:"Respiratory / Asthma",stock:false},
+  {name:"Montelukast 10mg",type:"Respiratory / Allergy",stock:true},
+  {name:"Betadine Ointment",type:"Antiseptic",stock:true},
+  {name:"Savlon",type:"Antiseptic",stock:true},
+  {name:"Dettol",type:"Antiseptic",stock:true},
+  {name:"Clotrimazole Cream",type:"Skin / Antifungal",stock:true},
+  {name:"Hydrocortisone Cream",type:"Skin",stock:true},
+  {name:"ORS Sachets",type:"Dehydration",stock:true},
+  {name:"Ondansetron 4mg",type:"Nausea / Vomiting",stock:true},
+  {name:"Domperidone",type:"Nausea / Gastro",stock:true},
+  {name:"Digene",type:"Acidity / Antacid",stock:true},
+  {name:"ENO",type:"Antacid",stock:true},
+  {name:"Loperamide",type:"Diarrhoea",stock:true},
+  {name:"Metrogyl 400mg",type:"Antibiotic / Gastro",stock:true},
+  {name:"Cough Syrup",type:"Cough / Cold",stock:true},
+  {name:"Sinarest",type:"Cold / Sinus",stock:true},
+  {name:"Vicks VapoRub",type:"Cold Relief",stock:true},
+  {name:"Thermometer",type:"Equipment",stock:true},
+  {name:"BP Monitor",type:"Equipment",stock:true},
+  {name:"Glucometer",type:"Equipment – Diabetes",stock:true},
+  {name:"Nebulizer",type:"Equipment – Respiratory",stock:true},
+  {name:"Diaper Rash Cream",type:"Baby Care",stock:true},
+  {name:"Baby Powder",type:"Baby Care",stock:true},
+  {name:"Paediatric Drops",type:"Baby Care",stock:true},
+  {name:"Pregnancy Test Kit",type:"Home Test",stock:true},
+  {name:"Surgical Mask",type:"Protection",stock:true},
+  {name:"Hand Sanitizer",type:"Hygiene",stock:true},
+  {name:"Bandages / Band-Aid",type:"First Aid",stock:true},
+  {name:"Surgical Gloves",type:"First Aid",stock:true},
+];
+
+function searchMed(){
+  const q = document.getElementById('medQ').value.trim().toLowerCase();
+  const res = document.getElementById('medResults');
+  const grid = document.getElementById('medGrid');
+  const title = document.getElementById('medResultsTitle');
+  if(q.length < 2){res.style.display='none';return;}
+  const found = medicines.filter(m=>
+    m.name.toLowerCase().includes(q)||m.type.toLowerCase().includes(q)
+  );
+  res.style.display='block';
+  if(found.length===0){
+    title.textContent='No medicines found for "'+q+'" — call us to check';
+    grid.innerHTML='<p class="no-result">💬 Not found in our database? <a href="tel:+918571223028" style="color:var(--g2);font-weight:600;">Call us</a> — we may have it in stock.</p>';
+    return;
+  }
+  title.textContent='Found '+found.length+' result'+(found.length>1?'s':'')+'  for "'+q+'"';
+  grid.innerHTML = found.map(m=>`
+    <div class="med-item">
+      <div><div class="med-name">${m.name}</div><div class="med-type">${m.type}</div></div>
+      <span class="badge ${m.stock?'badge-in':'badge-out'}">${m.stock?'✅ Available':'❌ Out of Stock'}</span>
+    </div>`).join('');
+}
+
+/* ── DARK MODE ── */
+function toggleDark(){
+  const isDark = document.documentElement.getAttribute('data-theme')==='dark';
+  document.documentElement.setAttribute('data-theme', isDark?'light':'dark');
+  document.getElementById('darkBtn').textContent = isDark?'🌙':'☀️';
+  localStorage.setItem('theme', isDark?'light':'dark');
+}
+(function(){
+  const saved = localStorage.getItem('theme');
+  if(saved==='dark'){
+    document.documentElement.setAttribute('data-theme','dark');
+    document.getElementById('darkBtn').textContent='☀️';
+  }
+})();
+
+/* ── NAVBAR ── */
+window.addEventListener('scroll',()=>{
+  document.getElementById('navbar').classList.toggle('scrolled',scrollY>60);
+  document.getElementById('scrollTop').classList.toggle('show',scrollY>400);
+});
+function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}
+function closeMenu(){document.getElementById('mobileMenu').classList.remove('open');}
+
+/* ── PRESCRIPTION UPLOAD ── */
+function handleFile(i){if(i.files&&i.files[0])setFile(i.files[0]);}
+function handleDrop(e){e.preventDefault();document.getElementById('dropZone').classList.remove('drag');if(e.dataTransfer.files[0])setFile(e.dataTransfer.files[0]);}
+function setFile(f){document.getElementById('fname').textContent='📎 '+f.name+' ('+( f.size/1024).toFixed(1)+' KB)';}
+function submitRx(){
+  const p=document.getElementById('rxPhone').value.trim();
+  const f=document.getElementById('rxFile').files[0];
+  if(!p){alert('⚠️ Please enter your phone number.');return;}
+  if(p.replace(/\D/g,'').length<10){alert('⚠️ Enter a valid 10-digit phone number.');return;}
+  if(!f){alert('⚠️ Please upload your prescription first.');return;}
+  const ok=document.getElementById('rxOk');
+  ok.style.display='block';
+  ok.scrollIntoView({behavior:'smooth',block:'center'});
+}
+
+/* ── ORDER FORM ── */
+function submitOrder(){
+  const name=document.getElementById('oName').value.trim();
+  const phone=document.getElementById('oPhone').value.trim();
+  const address=document.getElementById('oAddress').value.trim();
+  const meds=document.getElementById('oMeds').value.trim();
+  if(!name){alert('⚠️ Please enter your name.');return;}
+  if(!phone||phone.replace(/\D/g,'').length<10){alert('⚠️ Enter a valid phone number.');return;}
+  if(!address){alert('⚠️ Please enter your delivery address.');return;}
+  if(!meds){alert('⚠️ Please list the medicines you need.');return;}
+  // In production: send to Google Sheets / Firebase / backend
+  const waMsg=`Hello Murali Medicals!%0A%0ANew Order:%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AAddress: ${encodeURIComponent(address)}%0AMedicines: ${encodeURIComponent(meds)}`;
+  window.open('https://wa.me/918571223028?text='+waMsg,'_blank');
+  document.getElementById('formOk').style.display='block';
+}
+
+/* ── SMOOTH SCROLL ── */
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const t=document.querySelector(a.getAttribute('href'));
+    if(t){e.preventDefault();window.scrollTo({top:t.offsetTop-72,behavior:'smooth'});}
+  });
+});
+</script>
+</body>
+</html>
